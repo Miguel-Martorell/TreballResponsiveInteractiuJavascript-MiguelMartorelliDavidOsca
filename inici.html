@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sportiuws</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="respon.css">
+        <link rel="icon" type="img/png" href="logo.png">
+    </head>
+    <body onload='cargarSeccion()'>
+<!--Possam al header el títol y el logo que hem creat per la nostra pàgina-->
+        <header>
+            <h1 id="titulo"> 
+                <img id="logo" src="logo.png">Sportiuws
+            </h1>
+ <!--Botó per possar mode obscur a la pàgina-->
+            <button class="botonOscuro" onclick="modoOscuro()">
+                Modo oscuro🌙
+            </button>      
+           
+        </header>
+<!--Barra de navegació de la pàgina que condueix als altres html-->
+        <nav>
+            <a href="inici.html">Inici</a>
+            <a href="futbol.html">Futbol</a>
+            <a href="baloncesto.html">Baloncesto</a>
+            <a href="boxeo.html">Boxeo</a>
+            <a href="tenis.html">Tenis</a>
+        </nav>
+        <a href="valoraciones.html"><button class="irValoraciones" >Valoraciones</button></a>
+<!--Possam el titol de inici per saber a quina pàgina esteim-->
+        <h2 class="h2Claro">Inicio</h2>
+<!--Feim un section amb dos articles dins aquest amb informació sobre la nostra historia l'oriegen de l'esport, etc...-->
+        <section>            
+            <article>
+                <h3 onclick="cambiarContenido()">Nuestra historia</h3><span id="boton"></span>
+                <p id="contenido">
+                    Miguel y David, dos apasionados por el deporte, se conocen en el Fp de Informática y notan la falta de
+                    un sitio web que ofrezca información completa sobre deportes para dar a conocer a más gente. Deciden unir 
+                    fuerzas y crean "Sportiuws", un sitio que va más allá de los resultados, ofreciendo perfiles de atletas, 
+                    información sobre como funciona cada deporte y noticias actuales sobre él. Con dedicación, lanzan la plataforma que 
+                    rápidamente se vuelve popular, convirtiéndose en un punto de encuentro para fanáticos futboleros, basquetbolistas, 
+                    tenistas y fans del boxeo de todo el mundo.
+
+                </p>
+            </article>
+            <article>
+                <h3>Origen del deporte</h3>
+                <p>
+                     La historia del deporte comienza con la necesidad de la raza humana de correr, buscar alimento, protegerse o cazar, y
+                     esas actividades físicas han ido evolucionando hasta unas disciplinas deportivas regladas y organizadas que son las que 
+                     imperan en la actualidad.
+                </p>
+                <h3>Cual fue el primer deporte</h3>
+                <p>
+                    El que es considerado como el primer deporte del mundo es la lucha libre,
+                    ya que es  una disciplina muy sencilla: solo se necesitan a dos personas 
+                    para practicarla. La finalidad es tumbar al adversario.
+                </p>
+                <h3>¿Cuáles son los beneficios del deporte?</h3>
+                <ol>
+                    <li>Control de peso</li>
+                    <li>Menos riesgo de enfermedad</li>
+                    <li>Mejor salud mental y mejora del estado de ánimo</li>
+                    <li>Ayuda para dejar de fumar</li>
+                </ol>
+                <h3>Nuestros deportes favoritos</h3>
+                <ul type="square">
+                    <li>Futbol⚽</li>
+                    <li>Baloncesto🏀</li>
+                    <li>Boxeo🥊</li>
+                    <li>Tenis🎾</li>
+                    <li>valoraciones</li>
+                </ul>
+            </article>
+        </section>
+<!--Feim un aside per les notícies-->
+        <aside>
+            <h3>Lucha libre</h3>
+            <img class="granasaid" onclick="cambiarClase()" alt="estatua lucha libre" src="https://static.wixstatic.com/media/aaacef_5d7b0a5d41ff46b7abb8d212285b8a67.jpg/v1/fill/w_479,h_364,al_c,lg_1,q_80,enc_auto/aaacef_5d7b0a5d41ff46b7abb8d212285b8a67.jpg">
+            <h3>El deporte es para todos</h3>
+            <img class="granasaid" alt="personas de diferente edad corriendo" src="https://saludybienestar.segurcaixaadeslas.es/sites/default/files/blog_entry/images/beneficios-ejercicio.jpg"></img>
+        </aside>
+<!--Footer per l'adreça, una frase motivadora y per les xarxes socials-->        
+        <footer>
+            <p>No hay tiempo para el pasado cuando el futuro tiene grandes oportunidades, no la dejes escapar...</p>
+            <address>Calle Francesc de Borja Moll n/23</address>
+            <img class="gran" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png">
+            <span>Instagram : @Sportiuws</span>
+            <img class="gran" src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png">
+            <span>Twitter: @Sportiuws</span>
+            <img class="gran" src="https://pbs.twimg.com/media/FA8lwy1WQAoKcIe?format=jpg&name=900x900">
+            <span>Donaciones: (solo criptomonedas)</span>
+        </footer>
+        <script src="scripts.js"> 
+        </script>
+    </body>
+</html>

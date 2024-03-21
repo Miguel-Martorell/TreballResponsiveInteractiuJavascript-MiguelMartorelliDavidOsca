@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenis</title>
+    <link rel="icon" type="img/png" href="logo.png">
+    <link rel="stylesheet" href="respon.css">
+</head>
+    <body onload='cargarSeccion()'>
+<!--Possam al header el títol y el logo que hem creat per la nostra pàgina-->
+        <header>
+            <h1 id="titulo">
+            <img id="logo" src="logo.png"> 
+            Sportiuws
+        </h1>
+ <!--Botó per possar mode obscur a la pàgina-->
+        <button class="botonOscuro" onclick="modoOscuro()">
+            Modo oscuro🌙
+        </button> 
+        </header>
+<br>
+<!--Barra de navegació de la pàgina que condueix als altres html-->
+        <nav>
+            <a href="inici.html">Inici</a>
+            <a href="futbol.html">Futbol</a>
+            <a href="baloncesto.html">Baloncesto</a>
+            <a href="boxeo.html">Boxeo</a>
+            <a href="tenis.html">Tenis</a>
+        </nav>
+        <a href="valoraciones.html"><button class="irValoraciones" >Valoraciones</button></a>
+<!--Possam el titol de tenis per saber a quina pàgina esteim-->
+        <h2 class="h2Claro">Tenis🎾</h2> 
+<!--Feim un section amb dos articles dins aquest amb informació variada d'aquest esport-->
+        <section>
+            <article>
+                <h3> De que trata el tenis?</h3>
+                <p>El tenis, también llamado tenis de campo, es un deporte que se disputa entre dos jugadores 
+                (individuales) o entre dos parejas (dobles).
+                El objetivo principal del juego es lanzar una pelota golpeándola con la raqueta de modo que 
+                rebote en el otro lado pasando la red dentro de los límites permitidos del campo del rival,
+                procurando que este no pueda devolverla para conseguir un segundo rebote en el suelo y darle un punto.
+                </p>
+<br>
+<!--Hem fet una llista ordenada que começi al numero 1-->
+                <h3>Cual es su reglamento?</h3>
+                <ol type="1">
+                    <li>El jugador solo puede golpear la pelota una vez por turno.
+                     Pero si gana un punto puede volver a golpear si está en su turno de saque.
+                    </li>
+                    <li>El juego lleva una puntuación inusual: el primer punto se contabilizará como 15 puntos,
+                     el segundo como 30 puntos y el tercero como 40 puntos.                  
+                    </li>
+                    <li>El partido se gana con 2 sets o con 3 sets dependiendo si se juega al mejor de 3 o al mejor de 5.
+                    </li>
+                    <li>La pelota solo puede ser rebotada una vez antes de ser impactada por el jugador.
+                    </li>
+                    <li>Ningún jugador podrá tocar la red; esto se considera punto perdido para el mismo.
+                    </li>
+                    <li>Los jugadores van cambiando de lado de pista a lo largo del partido, en los juegos determinados, 
+                    al final del primero, tercero, quinto juego y a veces hay sexto juego, esto se debe a la puntuación del partido.
+                    </li>
+                </ol>
+                <h3>Medidas de la pista de tenis:</h3>
+                    <img id="campos" src="https://www.vts-tenis.com/images/blog/2020/dimensiones-pista-tenis-01.jpg">
+                <h3>Puntuación</h3>
+                <p>Un partido de tenis está compuesto por parciales (sets en inglés). 
+                El primero en ganar un número determinado de sets es el ganador.
+                 Cada set está integrado por juegos. En cada juego hay un jugador que saca, el cual se va alternando. 
+                 A su vez, los juegos están compuestos de puntos, que son 15, 30, 40 y el punto de juego.
+
+                La cuenta de los puntos es bastante particular: cuando un jugador gana su primer punto, su tanteador es 15, 
+                cuando gana 2 puntos, 30, y cuando gana 3 puntos, 40. Por ejemplo, si el sacador de ese juego lleva ganados 3 puntos y
+                 el receptor 1 punto, el marcador es de 40-15. Siempre se nombra en primer lugar la puntuación del sacador. 
+                 Cuando ambos jugadores empatan a 40, se dice que hay deuce o «iguales». El primer jugador o equipo que gane 
+                 un punto después del deuce, logra una «ventaja» y, en caso de ganar el siguiente punto, se lleva el juego. 
+                 De lo contrario se vuelve a estar en deuce hasta que se logre la diferencia de dos puntos. 
+                 El primer jugador que supera los 40 puntos gana el juego.
+                
+                El primero en ganar 6 juegos, con una diferencia mínima de 2 con respecto a su rival, es el ganador del set; 
+                en caso de que ninguno de los dos jugadores o equipos tenga una ventaja de dos juegos al llegar a seis (6-5), 
+                se juega un juego más para conseguir la diferencia de 2 juegos (7-5). De darse el empate (6-6), 
+                se jugará un juego de «desempate» o tie-break.
+                </p>
+            </article>
+            <article>
+                <h3>Historia del tenis:</h3>
+                <p>No fue hasta principios del siglo XVI que se comenzó a utilizar una raqueta de madera en lugar de las manos, 
+                    entonces recibió el nombre de tenis. Adquirió este nombre ya que cuando se jugaba se utilizaba la palabra “tenez”,
+                     que significa “ahí va” en francés, como una manera de advertir al oponente cuando se lanzaba la pelota.
+
+                    Otras versiones aseguran que en Gran Bretaña el comandante Walter Clopton Wingfield, 
+                    llamó al tenis sphairistiké que viene del griego, “jugando con bola”. Más adelante, en 1874, 
+                    definió las primeras reglas basándose en el badminton, un deporte de raqueta en el que se enfrentan dos
+                    jugadores o dos parejas. Los jugadores se sitúan en las mitades opuestas de una pista rectangular dividida 
+                    por una red.
+                    
+                    En los inicios del tenis, era una disciplina exclusiva para personas pertenecientes a la élite o clases altas de
+                     la sociedad, pero con el tiempo se fue extendiendo en todo el mundo, lo que permitió su democratización, 
+                     es decir, que todas las personas podían jugarlo sin importar su estrato o nivel económico. 
+                     En 1912, cuando el tenis empezó a ganar más reconocimiento, se creó la Federación Internacional de Tenis, 
+                     como una manera de institucionalizarlo.
+                    
+                    La oficialización de este deporte se dio en los Juegos Olímpicos de Seúl en 1988,
+                    tras una serie de incorporaciones y exclusiones debido al carácter profesional que adquirieron los jugadores.
+                    Actualmente, los torneos con mayor importancia son el de Wimbledon, 
+                    el Roland Garros y los abiertos de Estados Unidos. Entre los torneos femeninos más reconocidos se encuentran 
+                    la Copa Federación. 
+                    Los primeros campeonatos internacionales fueron los de la Copa Davis, que se celebran desde 1900. A
+                    ctualmente se realizan anualmente para determinar el equipo Campeón del Mundo.
+                </p>
+                <h3>Curiosidades del Tenis</h3>
+<!--Hem fet una llista ordenada que começi al numero 1-->
+                <ol type="1">
+                    <li>Las pelotas de tenis antes no eran amarillas, se jugaba con pelotas blancas,
+                         hasta que gracias a un estudio notaron que las bolas amarillas eran más fáciles 
+                         de ver para quienes ven los partidos en televisión.
+                    </li>
+                    <li>Serena Williams y Venus Williams son las primeras hermanas en ganar una medalla olímpica en tenis.
+                    </li>
+                    <li>Anteriormente las raquetas de los tenistas eran más pequeñas y estaban hechas de madera y las cuerdas
+                         provenían del tejido de intestino de oveja. Ahora, las raquetas son de fibra de carbono o aluminio y
+                          las cuerdas son de material sintético.
+                    </li>
+                    <li>En el tenis olímpico pueden participar jugadores en silla de ruedas.
+                    </li>
+                    <li>El Campeonato de Wimbledon es el más antiguo y quizás el más prestigioso en la actualidad.
+                    </li>
+                    <li>El partido más largo de la historia ocurrió en Wimbledon 2010 y en donde se enfrentaron el estadounidense
+                         John Isner y el francés Nicolas Mahut. En total duró 11 horas, 5 minutos y 23 segundos.
+                    </li>
+                    <li>Wimbledon cuenta con un sistema denominado ojo de halcón para determinar si la pelota cayó o no 
+                        dentro de la línea límite. Este sistema entrega una imagen con la trayectoria exacta de la pelota, 
+                        lo que ayuda a aclarar posibles controversias.
+                    </li>
+                </ol>
+            </article>
+        </section>
+<!--Feim un aside per les notícies-->
+        <aside>
+            <h2 class="h2Claro">Noticias</h2>
+<br>
+            <h3>El Nadal más sincero:“Tengo y he tenido miedo de anunciar las cosas”</h3>
+            <p>El español habla por primera vez en sus redes sociales después
+                 de anunciar su vuelta a la competición. “Creo que estoy preparado”, dice.
+            </p>
+<!--Iframe per linkar els vídeos-->
+            <iframe class="granasaid" src="https://www.youtube.com/embed/eERfUJQJiOY" title="La CONFESIÓN de NADAL tras ANUNCIAR su VUELTA: &quot;TENGO MIEDO&quot;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>El 58% de los londinenses apoya la controvertida expansión de Wimbledon</h3>
+            <p>El 58% de los londinenses apoya la controvertida expansión de Wimbledon, 
+            según una encuesta de YouGov, la compañía más reputada de Gran Bretaña.
+            </p>
+            <img class="granasaid" alt="tenista golpeando raqueta"src="https://www.mundodeportivo.com/files/image_948_465/files/fp/uploads/2023/10/27/653ba433bb010.r_d.1327-929-3703.jpeg">
+            <h3>El 'top100' se quita las arrugas: sólo 21 jugadores por encima de los 30 años</h3>
+            <p>En 2020 eran 40 los tenistas por encima de la treintena en la élite de la raqueta</p>
+            <img class="granasaid" alt="tenista joven" src="https://phantom-marca.unidadeditorial.es/18e8f69cf289873206ccfefb0ee7b45b/resize/828/f/webp/assets/multimedia/imagenes/2023/12/04/17017143342759.jpg">
+        </aside>
+<!--Footer per l'adreça, una frase motivadora y per les xarxes socials-->
+        <footer>
+            <p>No hay tiempo para el pasado cuando el futuro tiene grandes oportunidades, no la dejes escapar...</p>
+            <address>Calle Francesc de Borja Moll n/23</address>
+            <img class="gran" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png">
+            <span>Instagram : @Sportiuws</span>
+            <img class="gran" src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png">
+            <span>Twitter: @Sportiuws</span>
+            <img class="gran" src="https://pbs.twimg.com/media/FA8lwy1WQAoKcIe?format=jpg&name=900x900">
+            <span>Donaciones: (solo criptomonedas)</span>
+        </footer>
+        <script src="scripts.js"> 
+    
+        </script>
+    </body>
+</html>

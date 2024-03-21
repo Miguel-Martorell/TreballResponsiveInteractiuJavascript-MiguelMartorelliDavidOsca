@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxeo</title>
+    <link rel="icon" type="img/png" href="logo.png">
+    <link rel="stylesheet" href="respon.css">
+</head>
+<body onload='cargarSeccion()'>
+    <header>
+<!--Possam al header el títol y el logo que hem creat per la nostra pàgina-->
+        <h1 id="titulo">
+        <img id="logo" src="logo.png"> 
+         Sportiuws
+        </h1>
+ <!--Botó per possar mode obscur a la pàgina-->
+        <button class="botonOscuro" onclick="modoOscuro()">
+            Modo oscuro🌙
+        </button> 
+    </header>
+<br>
+<!--Barra de navegació de la pàgina que condueix als altres html-->
+    <nav>
+        <a href="inici.html">Inici</a>
+        <a href="futbol.html">Futbol</a>
+        <a href="baloncesto.html">Baloncesto</a>
+        <a href="boxeo.html">Boxeo</a>
+        <a href="tenis.html">Tenis</a>
+    </nav>
+    <a href="valoraciones.html"><button class="irValoraciones" >Valoraciones</button></a>
+<!--Possam el titol de boxeo per saber a quina pàgina esteim-->
+        <h2 class="h2Claro">Boxeo🥊</h2> 
+<!--Feim un section amb dos articles dins aquest amb informació variada d'aquest esport-->
+    <section>
+        <article>
+            <h3> De que trata el boxeo?</h3>
+            <p>El boxeo es un deporte  de contacto en el que dos oponentes, normalmente con guantes protectores, 
+                se lanzan puñetazos durante un tiempo predeterminado en un ring de boxeo. 
+                El objetivo es lanzar golpes sobre el oponente y evitar ser golpeado .
+                El deporte es puntuado por un grupo de jueces que determina el ganador según la cantidad de golpes recibidos, 
+                el poder y la precisión de los golpes y la estrategia general utilizada en la pelea.
+                Esta disciplina tiene una larga historia y fue un deporte olímpico en la antigua Grecia.
+                Hoy en día, es un deporte popular en todo el mundo, con competiciones profesionales y amateurs organizadas por varias organizaciones.
+                Los boxeadores suelen entrenar durante meses antes de una pelea, trabajando en su fuerza, cardio, técnica y estrategia. 
+                Hay varias clases de peso en el deporte, y los boxeadores normalmente pelean dentro de su propia clase de peso.
+                Este deporte se considera un deporte desafiante y físicamente exigente, 
+                que requiere un alto nivel de condición física, resistencia y habilidad.
+            </p>
+<br>
+<!--Hem fet una llista ordenada que começi al numero 1-->
+            <h3>Cual es su reglamento?</h3>
+            <ol type="1">
+                <li>El número de rounds es establecido durante la planificación del evento
+                </li>
+                <li>Los guantes deben ser nuevos y de la talla adecuada al puño.           
+                </li>
+                <li>Son tres los jueces que califican cada episodio de la pelea.
+                </li>
+                <li>No alterar los guantes con yeso o materiales que los endurezcan.
+                </li>
+                <li>No se debe patear al contrincante.
+                </li>
+                <li>No se debe golpear la nuca o detrás de la cabeza.
+                </li>
+                <li>No se admiten golpes bajos .
+                </li>
+                <li>No se debe dar la espalda al contrincante
+                </li>
+                <li>No se deben causar tropiezos..
+                </li>No se deben dar cabezazos intencionalmente.
+            </ol>
+            <h3>Medidas del cuadriátero de boxeo:</h3>
+            <p>El boxeo se hace en un cuadrilátero donde hay dos esquinas, la azul y la roja donde los dos boxeadores lucharán
+                y habrá un referi que parará la pelea cuando haga falta o cuando acabe el asalto.
+            </p>
+                <img id="campos" src="https://gruporeforma.elnorte.com/interactivo/cancha/villamelon_box/img/img_medidas_ring.png">
+            <h3>Puntuación</h3>
+            <p>Un combate se puntúa mediante el sistema de 10 puntos. 
+                A menos que haya una falta grave, un juez debe decidir el ganador del asalto y otorgarle 10 puntos.
+                 Al otro boxeador se le dará una puntuación de nueve, lo que resultará en una puntuación de 10-9.
+            </p>
+        </article>
+        <article>
+            <h3>Historia del boxeo:</h3>
+            <p>Según se estima, el boxeo tiene sus orígenes en Mesopotamia, alrededor del año 5000 a.C. 
+                Se han encontrado restos arqueológicos que parecen confirmarlo,
+                 y también secundan el hecho de que los sumerios y los egipcios lo conocieron y practicaron. 
+                 Para los egipcios, de hecho, era una práctica popular y extendida.
+            <h3>Curiosidades del Boxeo</h3>
+<!--Hem fet una llista ordenada que começi al numero 1-->
+            <ol type="1">
+                <li>La pelea de más larga duración jamás registrada tuvo lugar el 6 de abril de 1883, en Nueva Orleans,
+                     y enfrentó a Jack Burke y a Andy Brown.
+                      La pelea duró la friolera de 7 horas y 15 minutos, y se extendió a lo largo de 110 asaltos. 
+                      Fue una pelea que les llevó toda la noche, ya que comenzaron a las nueve y cuarto y terminaron a las cuatro
+                    y media de la madrugada. Lo más irónico de todo fue que, al final, el combate fue declarado nulo.
+                </li>
+                <li>La otra cara de la moneda es el combate que se celebró en Minesota en 1947, y que enfrentó a Mike Collins y a Pat
+                     Brownson. 
+                     Tan solo habían transcurrido 4 segundos desde que comenzó el combate cuando Collins noqueó a su oponente.
+                </li>
+                <li>Una curiosidad bastante divertida relacionada con el boxeo es la existencia del chessboxing. 
+                    Se trata de una disciplina que, tal como su nombre indica, combina boxeo y ajedrez. 
+                    Así, ambos contrincantes deben alternar ambas prácticas del siguiente modo: durante los asaltos pares se enfrentan
+                     con los puños y durante los impares, lo hacen frente al tablero de ajedrez. Se trata de una variante divertida 
+                     y extravagante que nació en 2005 y que, a día de hoy, es considerada un deporte.
+                </li>
+                <li>Mike Tyson, la súper estrella del deporte, 
+                    peleo por primera vez luego de que un sujeto desconocido diera muerte a sus mascotas adoradas, las palomas. 
+                    El suceso es poco conocido y salió como una anécdota de la boca del mismo atleta.
+                </li>
+                <li>Una de las peleas más desiguales en la historia del box, 
+                    Nikolai Valuev enfrenta en 2004 al argentino y ex campeón mundial crucero, 
+                    Marcelo “El toro” Domínguez, sacándole una ventaja de 41cm de altura, 
+                    50cm de alcance y 45kg de peso, así y todo en una pelea muy disputada vence Valuev por decisión, 
+                    ante los abucheos del público que habían visto ganar al argentino, quien por momentos se lo llevó por delante.
+                </li>
+            </ol>
+        </article>
+    </section>
+<!--Feim un aside per les notícies-->
+    <aside>
+        <h2 class="h2Claro">Noticias</h2>
+<br>
+        <h3>Canelo Álvarez NO LE DEBERÍA TENER MIEDO a Benavidez. El MONSTRUO TIENE DEFICIENCIAS</h3>
+        <p>David Benavidez derrotó por TKO a Demetrius Andrade el fin de semana pasado
+             y se convirtió en retador oficial del Canelo Álvarez.
+            Mauricio Pedroza junto a Bernardo Osuna y
+             Álvaro Morales analizan lo que fue la pelea entre Benavides y Andrade y 
+             lo que será una posible pelea entre Benavidez y el Canelo Álvarez.
+        </p>
+<!--Iframe per linkar els vídeos-->
+        <iframe class="granasaid" src="https://www.youtube.com/embed/cernocFFZU8" title="Canelo Álvarez NO LE DEBERÍA TENER MIEDO a Benavidez. El MONSTRUO TIENE DEFICIENCIAS | ESPN Boxeo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3>Arabia Saudí desplaza a Las Vegas: Fury vs Usyk en febrero y en diciembre una velada con Wilder, Joshua y Bivol</h3>
+        <p>ESPN anuncia que la pelea por el indiscutido del peso pesado será el 17 de febrero. 
+            La cartelera que Arabia prepara para el 23 de diciembre, ya sin Fury ni Usyk, baraja sólo nombres de primer nivel.
+        </p>
+        <img class="granasaid" alt="cara a cara" src="https://phantom-marca.unidadeditorial.es/4f283f65ecc656040f4a053155fcf631/resize/750/f/webp/assets/multimedia/imagenes/2023/11/14/16999876029741.jpg">
+        <h3>Ryan García está de vuelta: derrota a Oscar Duarte por nocaut</h3>
+        <p>El estadounidense logró la victoria en el octavo asalto pese al dominio inicial del mexicano.</p>
+        <img class="granasaid" alt="imagen de la pelea" src="https://phantom-marca.unidadeditorial.es/0e97c876fb4b23cd12d2b80504d43c3d/resize/750/f/webp/assets/multimedia/imagenes/2023/12/03/17015930353725.jpg">
+    </aside>
+<!--Footer per l'adreça, una frase motivadora y per les xarxes socials-->
+    <footer>
+        <p>No hay tiempo para el pasado cuando el futuro tiene grandes oportunidades, no la dejes escapar...</p>
+        <address>Calle Francesc de Borja Moll n/23</address>
+        <img class="gran" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png">
+        <span>Instagram : @Sportiuws</span>
+        <img class="gran" src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png">
+        <span>Twitter: @Sportiuws</span>
+        <img class="gran" src="https://pbs.twimg.com/media/FA8lwy1WQAoKcIe?format=jpg&name=900x900">
+        <span>Donaciones: (solo criptomonedas)</span>
+    </footer> 
+    <script src="scripts.js"> 
+    
+    </script>
+    </body>
+</html>

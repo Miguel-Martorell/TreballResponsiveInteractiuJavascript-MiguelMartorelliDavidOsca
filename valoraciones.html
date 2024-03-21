@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valoraciones</title>
+    <link rel="icon" type="img/png" href="logo.png">
+    <link rel="stylesheet" href="respon.css">
+</head>
+<body onload="cargarSeccion()">
+    <!--Botó per possar mode obscur a la pàgina-->
+    <button class="botonOscuro" onclick="modoOscuroVal()">
+        Modo oscuro🌙
+    </button> 
+    <form action="#" id="valoracionForm" class="myForm">
+        <div class="formContainer">
+            <h2 class="titleForm">Valoraciones</h2>
+            <h3>Deja una valoración te lo agradecemos, así seguiremos con este proyectazo!</h3>
+            <div class="distForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="distForm">
+                <label for="comentario">Comentario:</label>
+                <input type="text" id="comentario" name="comentario" required>
+            </div>
+            <div class="distForm">
+                <label for="estrellas">Calificación:</label>
+                <input type="number" id="estrellas" name="estrellas" min="1" max="5" required>
+            </div>
+            <button type="submit" id="enviarBtn">Enviar</button>
+        </div>
+    </form>
+
+    <div id="mensajeMostrado"></div>
+
+    <script>
+        var formularioEnviado = false; // Variable per controlar si el formulari ja s'ha enviat
+
+        function mostrarValores() {
+            if (!formularioEnviado) { // Si el formulari encara no s'ha enviat
+                // Obtenir els valors del formulari
+                var nombre = document.getElementById('nombre').value;
+                var comentario = document.getElementById('comentario').value;
+                var estrellas = document.getElementById('estrellas').value;
+
+                // Crear un nou div per mostrar la valoració
+                var valoracionMostrada = document.getElementById('mensajeMostrado');
+                var nuevaValoracion = document.createElement('div');
+
+                // Crear els p per mostrar els valors
+                var nombreParrafo = document.createElement('p');
+                var comentarioParrafo = document.createElement('p');
+                var estrellasParrafo = document.createElement('p');
+
+                // Afegir text als paragrafs
+                nombreParrafo.textContent = "Nombre: " + nombre;
+                comentarioParrafo.textContent = "Comentario: " + comentario;
+                estrellasParrafo.textContent = "Calificación: " + estrellas;
+
+                // Afegir los paragrafs al nou div
+                nuevaValoracion.appendChild(nombreParrafo);
+                nuevaValoracion.appendChild(comentarioParrafo);
+                nuevaValoracion.appendChild(estrellasParrafo);
+
+                // Afegir el nou div al contenidor de valoracions
+                valoracionMostrada.appendChild(nuevaValoracion);
+
+                // Deshabilitar el botó d'enviar
+                document.getElementById('enviarBtn').disabled = true;
+
+                formularioEnviado = true; // Marcar el formulari como enviat
+            }
+        }
+
+        document.getElementById('valoracionForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar que el formulari s'envii.
+            mostrarValores(); // Mostrar els valors del formulari
+        });
+
+        
+        function modoOscuroVal() {
+    var cuerpo = document.body;
+    var boton = document.getElementsByClassName('botonOscuro')[0];
+    var degradado = document.getElementsByClassName('formContainer')[0];
+    var tituloForm = document.getElementsByClassName('titleForm')[0];
+  
+    if (cuerpo.style.backgroundColor === 'black') {
+        // Mode lluminos
+        cuerpo.style.backgroundColor = 'rgb(59, 105, 121)';
+        cuerpo.style.color = 'white';
+        boton.innerHTML = 'Modo oscuro🌙';
+        degradado.classList.remove('formContainerOscuro');
+        degradado.classList.add('formContainer');
+        tituloForm.classList.remove('titleFormOscuro');
+        tituloForm.classList.add('titleForm');
+        
+    } else {
+        // Mode fosc
+        cuerpo.style.backgroundColor = 'black';
+        cuerpo.style.color = 'white';
+        boton.innerHTML = 'Modo predeterminado☀️';
+        degradado.classList.add('formContainerOscuro');
+        tituloForm.classList.add('titleFormOscuro'); 
+        
+    }
+}
+function cargarSeccion() {
+    // Obtenir el nom de la secció del títol de la pàgina
+    let nombreSeccion = document.getElementsByTagName('title')[0].textContent;
+
+    // Obtenir el nom de la secció del títol de la pàgina
+    alert(`Bienvenido a la Sección de ${nombreSeccion}`);
+}
+    </script>
+</body>
+</html>
